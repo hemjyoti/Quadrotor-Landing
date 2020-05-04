@@ -1,0 +1,17 @@
+<launch>
+  <node name="ardrone_driver" pkg="ardrone_autonomy" type="ardrone_driver">
+  <param name="_navdata_demo" value="false" />
+  <param name="_loop_rate" value="500"/>
+  </node>
+  <node name="state_estimation" pkg="tum_ardrone" type="state_estimation">
+  </node>
+  <node name="drone_gui" pkg="tum_ardrone" type="drone_gui">
+  </node>
+  <node name="ardrone_test_node" pkg="ardrone_test" type="test_node">
+  </node>
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+    <param name="tf" value="true"/>
+  </include>
+  <node name="kinect_guidance" pkg="kinect_guidance_node" type="kinect_guidance">
+  </node>
+</launch>

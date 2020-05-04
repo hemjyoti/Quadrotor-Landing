@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+    <param name="tf" value="true"/>
+  </include>
+  <node name="kinect_guidance" pkg="kinect_guidance_node" type="kinect_guidance">
+  </node>
+</launch>
