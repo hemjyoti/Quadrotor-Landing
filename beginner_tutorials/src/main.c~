@@ -1,0 +1,17 @@
+/*
+#include <stdio.h>
+#include <iostream>
+#include "add1.c"
+
+main()
+{
+      int8_T c;
+     c = add1(10,100);
+      printf("%d",c);
+	
+      //cout<< c
+      
+}
+*/
+
+
