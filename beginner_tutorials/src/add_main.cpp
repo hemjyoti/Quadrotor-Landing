@@ -1,0 +1,39 @@
+/*
+#include <stdio.h>
+#include <iostream>
+#include "add1.c"
+
+main()
+{
+      int8_T c;
+     c = add1(10,100);
+      printf("%d",c);
+	
+      //cout<< c
+      
+}
+*/
+#include "ros/ros.h"						
+#include <stdio.h>
+#include "add1.c"
+#include <termios.h>
+#include <sstream>
+#include <iostream>
+
+
+int main(int argc, char **argv)
+{
+	using namespace std;
+	int a = 5;
+	int b = 10;
+	int c;
+	ROS_INFO("Sum of [%d + %d]", a,b);
+	c = add1(a,b);
+	ROS_INFO(" =  [%d]", c);
+return 0;
+}
+
+
+
+
+

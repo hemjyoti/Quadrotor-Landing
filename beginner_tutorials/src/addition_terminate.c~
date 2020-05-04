@@ -1,0 +1,22 @@
+/*
+ * addition_terminate.c
+ *
+ * Code generation for function 'addition_terminate'
+ *
+ * C source code generated on: Tue Mar 29 13:33:27 2016
+ *
+ */
+
+/* Include files */
+#include "rt_nonfinite.h"
+#include "add.h"
+#include "dynamics_TEST.h"
+#include "addition_terminate.h"
+
+/* Function Definitions */
+void addition_terminate(void)
+{
+  /* (no terminate code required) */
+}
+
+/* End of code generation (addition_terminate.c) */
